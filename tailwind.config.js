@@ -15,14 +15,19 @@ module.exports = {
         teal:colors.teal
       },
       fontSize:{
+        'xss':'0.625rem', /*10px*/
         '4.5xl':'2.5rem', /*40px*/
       },
       margin:{
+        0.25:'1px',
         30:'7.625rem' /*122px*/
       },
       width:{
         26:'6.5rem' /*104px*/
       },
+      borderWidth:{
+        3:'3px'
+      }
     },
   },
   variants: {
