@@ -77,7 +77,7 @@ module.exports = {
 
 ### Where are the styles/classes?
 
-Everything is moved to `style.css` which takes advantages of tailwind's `@apply` directive. This sacrifies the readability, but keeps your markup clean. Tree-shaking works flawlessly for the production build :)
+Everything was moved to `style.css` which takes advantage of tailwind's `@apply` directive. This sacrifies the readability a bit, but keeps your markup clean. Tree-shaking works flawlessly on the production build :)
 
 ```css
 .logo {
