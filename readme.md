@@ -1,12 +1,9 @@
-# Tailwind CSS Boilerplate
+# Tesla ModelX Hero Section Using Tailwind CSS
 
-Setting up a tailwind css based project needs to install the tailwindcss npm package, postcss and autoprefixer - it also requires to configure a tailwind.config.js as well as postcss.config.js (optional, if you're planning to use postcss) and then configure those files manually.
+I used the [TailWind CSS Boilerplate](https://github.com/hasinhayder/tailwind-boilerplate) project for this. 
 
-And finally for building the production code with tree-shaking (removing unused css from your project and keeping only what is required) you need to configure the purge settings in your tailwind configuration. For someone new to tailwind and for others who regularly use tailwind in their projects, these are boring jobs and you have to do it repeatedly for every project (or learn how to do it if someone is just starting with tailwind)
+This project shows how to create the Hero section of https://www.tesla.com/modelx using Tailwind CSS :)
 
-So this boilerplate has all the configuration to save your time from this boring configurtion tasks (and from gogling many things)
-
-Use this boilerplate as the starting point for your JAMstack + **Tailwind CSS** based projects.
 
 ### start
 ```sh
@@ -38,4 +35,39 @@ export default {
 
 ### configure tailwind
 There is a `tailwind.config.js` file with `purge` instructions and extra colors, feel free to customize it according to your need
+```javascript
+const colors = require('tailwindcss/colors')
+module.exports = {
+  purge:['./index.html'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {
+      colors:{
+        fuchsia:colors.fuchsia,
+        cyan:colors.cyan,
+        emerald:colors.emerald,
+        teal:colors.teal
+      },
+      fontSize:{
+        'xss':'0.625rem', /*10px*/
+        '4.5xl':'2.5rem', /*40px*/
+      },
+      margin:{
+        0.25:'1px',
+        30:'7.625rem' /*122px*/
+      },
+      width:{
+        26:'6.5rem' /*104px*/
+      },
+      borderWidth:{
+        3:'3px'
+      }
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
 
