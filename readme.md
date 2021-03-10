@@ -1,5 +1,7 @@
 # Tesla ModelX Hero Section Using Tailwind CSS
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/28bf5911-0906-4dec-91bc-e87a194596e9/deploy-status)](https://app.netlify.com/sites/modelx-tailwind/deploys)
+
 I used the [TailWind CSS Boilerplate](https://github.com/hasinhayder/tailwind-boilerplate) project for this. 
 
 This project shows how to create the Hero section of https://www.tesla.com/modelx using Tailwind CSS :)
