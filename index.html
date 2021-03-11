@@ -8,55 +8,74 @@
   <title>Tesla ModelX Hero Section Using Tailwind CSS</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    nav{
+      letter-spacing: 0px;
+    }
+
+    .main {
+      background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/da705069-91b5-41cb-86f3-86a585c6fdf3/bvlatuR/std/2880x1800/MX-Hero-Desktop);
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="main">
-    <nav class="nav">
-      <div class="logo">
+  <div class="h-screen main">
+    <nav class="flex w-full h-8 pt-4 font-semibold text-sm uppercase text-gray-800 ">
+      <div class="lg:w-48 pl-4 pt-1">
         <img class="w-26" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNDIgMzUiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIE1lZXQiIHdpZHRoPSIzNDIiIGhlaWdodD0iMzUiPjxwYXRoIGNsYXNzPSJ0ZHMtaWNvbi1maWxsLS1wcmltYXJ5IiBkPSJNMCAuMWE5LjcgOS43IDAgMDA3IDYuOTNoMTAuOTNsLjU2LjIydjI3LjU4aDYuODJWNy4yOWwuNjItLjIyaDEwLjk0YTkuODIgOS44MiAwIDAwNy02LjkzVi4wN0gwVi4xek0yMzguNjEuMDZoLTYuOHYzNC44NWgzMS4xNGE5LjY4IDkuNjggMCAwMDUuOTQtNi44NmgtMzAuM2wuMDItMjcuOTl6bS01Mi4zMyA2Ljg2YzMuNjItMSA2LjY2LTMuODIgNy4zOS02Ljg4bC0zOC4xLjA2djIwLjU1aDMxLjE3djcuMjNoLTI0LjQ2YTEzLjYgMTMuNiAwIDAwLTguNzEgN2gzOS44OVYxMy44MUgxNjIuM1Y2LjkyaDIzLjk4em0xMTYuMTcgMjcuOTdoNi43NlYyMC44N2gyNC41OHYxNC4wMmg2Ljc1VjEzLjg3bC0zOC4wOS0uMDR6TTg1LjM1IDdoMjZhOS41NyA5LjU3IDAgMDA3LjA1LTdINzguM2E5LjYxIDkuNjEgMCAwMDcuMDUgN3ptMCAxMy43N2gyNmE5LjU5IDkuNTkgMCAwMDcuMDUtN0g3OC4zYTkuNjMgOS42MyAwIDAwNy4wNSA3em0wIDE0LjE0aDI2YTkuNTkgOS41OSAwIDAwNy4wNS03SDc4LjNhOS42MiA5LjYyIDAgMDA3LjA1IDd6TTMwOC40NiA3LjAyaDI2YTkuNTggOS41OCAwIDAwNy4wNi03aC00MC4xMWE5LjU5IDkuNTkgMCAwMDcuMDUgN3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" alt="">
       </div>
-      <div class="middle-menu">
-        <div>
-          <a href="#" class="">Model S</a>
-          <a href="#" class="">Model 3</a>
-          <a href="#" class="">Model X</a>
-          <a href="#" class="">Model Y</a>
-          <a href="#" class="">Solar Roof</a>
-          <a href="#" class="">Solar Panels</a>
+      <div class="invisible xl:visible text-center flex-auto ">
+        <div class="hidden xl:block space-x-5">
+        <a href="#" class="hover:text-white">Model S</a>
+        <a href="#" class="hover:text-white">Model 3</a>
+        <a href="#" class="hover:text-white">Model X</a>
+        <a href="#" class="hover:text-white">Model Y</a>
+        <a href="#" class="hover:text-white">Solar Roof</a>
+        <a href="#" class="hover:text-white">Solar Panels</a>
         </div>
       </div>
-      <div class="right-menu">
+      <div class="pr-4 space-x-5 right-0 flex align-middle">
         <a href="#" class="hidden md:inline">Shop</a>
         <a class="hidden md:inline" href="https://github.com/hasinhayder/tailwind-boilerplate" target="_blank">Tailwind Boilerplate</a>
         <a href="#">
-          <img class="hamburger" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABaklEQVR4Xu2aTUoDQRCFv2yNP9cInsCtbkWCl9EraE4jwWXIVo8gXiIkxL0URNBON3Yyq6p6s00z9Hv1VVdPpUYkf0bJ9SMDREByB5QCyQHQIagUUAokd0Ap0ABgAjwBN8CZc0i+gCXwAHyUWmoEmPh34MK58HL7a+CqNKFmwAswDSb+R8681FYzYBMA+1b8tqW2mgG2aByUgC4DDJO7oAZYet//1pbpEFztDsHP/wyw360SPO/K4KlzGgz7BfAI/BFvunQRch7dwdsXAYMtdP4CEeA8gIO3LwIGW+j8BS0CLoEZcA2cONd4cD/AxL8B586FH90PeAVug4k/qB9gyHjHXv2AhgPqB6gfUHwSt8qg+gFBq8CeLF2Fs0S6pVMEiIDkDigFkgPQ/F9A/QD1A2LmRtd8gPoBmg/QfEDIISnNB2g+oFLZdBWOWe77VYmAfq9irhQBMePar0oE9HsVc6UIiBnXflXpCfgGC8dCQbbkoGgAAAAASUVORK5CYII=" alt="">
+          <img class="w-4 h-4 mt-0.25"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABaklEQVR4Xu2aTUoDQRCFv2yNP9cInsCtbkWCl9EraE4jwWXIVo8gXiIkxL0URNBON3Yyq6p6s00z9Hv1VVdPpUYkf0bJ9SMDREByB5QCyQHQIagUUAokd0Ap0ABgAjwBN8CZc0i+gCXwAHyUWmoEmPh34MK58HL7a+CqNKFmwAswDSb+R8681FYzYBMA+1b8tqW2mgG2aByUgC4DDJO7oAZYet//1pbpEFztDsHP/wyw360SPO/K4KlzGgz7BfAI/BFvunQRch7dwdsXAYMtdP4CEeA8gIO3LwIGW+j8BS0CLoEZcA2cONd4cD/AxL8B586FH90PeAVug4k/qB9gyHjHXv2AhgPqB6gfUHwSt8qg+gFBq8CeLF2Fs0S6pVMEiIDkDigFkgPQ/F9A/QD1A2LmRtd8gPoBmg/QfEDIISnNB2g+oFLZdBWOWe77VYmAfq9irhQBMePar0oE9HsVc6UIiBnXflXpCfgGC8dCQbbkoGgAAAAASUVORK5CYII=" alt="">
         </a>
       </div>
     </nav>
-    <header class="header">
-      <h1 class="title">Model X</h1>
-      <p class="subtitle">Plaid</p>
+    <header class="mt-11 md:mt-30 text-center">
+      <h1 class="text-4.5xl font-medium">Model X</h1>
+      <p class="-mt-1">Plaid</p>
     </header>
-    <div class="items">
-      <div class="item">
-        <h1>340 <span>mi</span></h1>
-        <span>Range (est.)</span>
+    <div class="items absolute bottom-20 md:bottom-6 w-full flex flex-wrap justify-center spacing-x-10">
+      <div class="item text-white w-32 md:w-40 text-center">
+        <h1 class="text-2xl md:text-3xl">340 <span class="text-sm md:text-2xl -ml-1 font-semibold">mi</span></h1>
+        <span class="text-xs">Range (est.)</span>
       </div>
-      <div class="item">
-        <h1>2.5 <span>s</span></h1>
-        <span>0-60 mph*</span>
+      <div class="item text-white w-32 md:w-40 text-center">
+        <h1 class="text-2xl md:text-3xl">2.5 <span class="text-sm md:text-2xl -ml-1 font-semibold">s</span></h1>
+        <span class="text-xs">0-60 mph*</span>
       </div>
-      <div class="item">
-        <h1>9.9 <span>s</span></h1>
-        <span>1/4 Mile</span>
+      <div class="item text-white w-32 md:w-44 text-center">
+        <h1 class="text-2xl md:text-3xl">9.9 <span class="text-sm md:text-2xl -ml-1 font-semibold">s</span></h1>
+        <span class="text-xs">1/4 Mile</span>
       </div>
-      <div class="item hidden md:block">
-        <h1>1,020 <span>hp</span></h1>
-        <span>Peak Power</span>
+      <div class="item text-white w-32 md:w-40 text-center hidden md:block">
+        <h1 class="text-2xl md:text-3xl">1,020 <span class="text-sm md:text-2xl -ml-1 font-semibold">hp</span></h1>
+        <span class="text-xs">Peak Power</span>
       </div>
-      <div class="button-item">
-        <h1 class="rounded-button">Order Now</h1>
+      <div class="item text-white ml-2 mr-4 md:md-0 md:w-40 w-full text-center sm:flex-nowrap">
+        <h1 class="text-xs rounded-3xl border-3 border-white p-2 uppercase mt-3 md:mt-1.5  ml-3 font-medium">Order Now</h1>
       </div>
     </div>
   </div>
